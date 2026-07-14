@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:pages": "npm run build && node scripts/prepare-pages.js",
     "extract-pdf": "node scripts/extract-pdf.js",
     "extract-work-images": "node scripts/extract-pdf-page-images.js public/resume.pdf public/work",
     "validate:data": "node scripts/validate-data.js",

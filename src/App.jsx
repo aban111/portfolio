@@ -10,6 +10,8 @@ import LoadingScreen from './components/LoadingScreen'
 import WorkDetail from './components/WorkDetail'
 import { usePDFData } from './lib/usePDFData'
 
+const ROUTER_BASENAME = import.meta.env.BASE_URL.replace(/\/+$/, '') || '/'
+
 function HomePage({ site, pages, profile, projects }) {
   return (
     <>
@@ -219,7 +221,7 @@ function App() {
   const showLoading = isMinimumLoading || isLoading
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={ROUTER_BASENAME}>
       {showLoading ? (
         <LoadingScreen profile={profile} site={site} />
       ) : error ? (

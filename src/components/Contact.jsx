@@ -1,3 +1,5 @@
+import { getAssetUrl } from '../lib/assets'
+
 function getFallbackItems(profile, page) {
   const links = profile?.links || []
   const items = []
@@ -32,13 +34,14 @@ function getFallbackItems(profile, page) {
 function ContactValue({ item }) {
   const value = item.value || item.label
   const isExternal = item.href?.startsWith('http')
+  const href = item.href?.startsWith('/') ? getAssetUrl(item.href) : item.href
 
   if (!value) return null
 
   if (item.href) {
     return (
       <a
-        href={item.href}
+        href={href}
         rel={isExternal ? 'noreferrer' : undefined}
         target={isExternal ? '_blank' : undefined}
       >

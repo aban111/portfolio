@@ -2,6 +2,8 @@
 
 一个由 `public/data.json` 驱动的 React 单页作品集。首页、简历、联系信息、项目列表与项目详情均从数据文件渲染；华硕项目额外包含完整的电商体验案例叙事。
 
+在线预览：<https://aban111.github.io/portfolio/>
+
 ## 本地运行
 
 ```bash
@@ -14,7 +16,12 @@ npm run dev
 - `npm run validate:data`：检查项目 ID、图片索引和本地素材引用。
 - `npm run lint`：运行 ESLint。
 - `npm run build`：生成生产构建到 `dist/`。
+- `npm run build:pages`：生成 GitHub Pages 构建，并补充 SPA 深链接回退。
 - `npm run verify`：依次执行数据校验、Lint 和生产构建。
+
+## GitHub Pages
+
+推送到 `main` 后，`.github/workflows/deploy-pages.yml` 会自动校验、构建并部署 `dist/`。项目站点使用 `/portfolio/` 基础路径，`dist/404.html` 用于支持直接访问或刷新项目详情页。
 
 ## 内容维护
 
