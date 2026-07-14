@@ -1,0 +1,731 @@
+{
+  "site": {
+    "title": "PORTFOLIO",
+    "year": "",
+    "footerPrefix": "©",
+    "metaSeparator": " · ",
+    "navigation": [
+      {
+        "label": "首页",
+        "path": "/"
+      },
+      {
+        "label": "作品",
+        "path": "/projects"
+      },
+      {
+        "label": "简历",
+        "path": "/about"
+      },
+      {
+        "label": "联系",
+        "path": "/contact"
+      }
+    ],
+    "heroCta": {
+      "label": "See my work →",
+      "href": "#projects"
+    }
+  },
+  "pages": {
+    "projects": {
+      "caption": "Selected Work",
+      "title": "作品"
+    },
+    "about": {
+      "caption": "Resume",
+      "title": "简历",
+      "sourceLabel": "",
+      "sourceSeparator": ""
+    },
+    "contact": {
+      "caption": "Contact",
+      "title": "联系",
+      "emailLabel": "邮箱",
+      "linksLabel": "链接",
+      "labelSeparator": "："
+    }
+  },
+  "profile": {
+    "name": "曾浩晟",
+    "title": "品牌与交互设计师",
+    "description": "以品牌系统、产品体验和数据化转化为核心，连接视觉表达、业务目标与用户决策路径。",
+    "heroPhrases": [
+      "喜欢笑。",
+      "我做设计，也做思考。",
+      "BBQ爱好者。",
+      "相信好奇心。",
+      "把复杂变清楚。",
+      "喜欢把事做漂亮。",
+      "观察细节，也观察人。",
+      "认真，但不无聊。",
+      "设计先问为什么。",
+      "在秩序里找情绪。",
+      "会为一个字距停很久。",
+      "偏爱干净的表达。",
+      "把灵感落到系统里。",
+      "喜欢有温度的界面。",
+      "偶尔慢一点。",
+      "相信少即是准。",
+      "做能被理解的设计。",
+      "也做能被记住的设计。",
+      "爱研究人的选择。",
+      "喜欢烟火气。"
+    ],
+    "tagline": "品牌设计 / 交互设计 / 其他设计",
+    "about": [
+      {
+        "label": "实习经历",
+        "items": [
+          {
+            "title": "上海新易腾集团有限公司",
+            "role": "电商管培生",
+            "period": "2025.06 - 2025.08"
+          },
+          {
+            "title": "杭州智能向量文化科技有限公司",
+            "role": "品牌设计实习生",
+            "period": "2024.04 - 2024.07"
+          },
+          {
+            "title": "正大（慈溪）现代农业建设有限公司",
+            "role": "营销策划实习生",
+            "period": "2025.12 - 2026.03"
+          }
+        ]
+      },
+      {
+        "label": "技能",
+        "items": [
+          {
+            "title": "设计与工具",
+            "body": "PS、AI、AE、PR、Figma、C4D、Rhino、Keyshot、CapCut、Midjourney、Stable Diffusion、Office。"
+          },
+          {
+            "title": "能力方向",
+            "body": "客户需求洞察、品牌视觉系统、包装落地、电商页面设计、交互体验优化、建模与动效、AIGC 辅助创意。"
+          },
+          {
+            "title": "证书与语言",
+            "body": "英语六级、AIGC 技能专家认证、普通话。"
+          }
+        ]
+      },
+      {
+        "label": "教育与奖项",
+        "items": [
+          {
+            "title": "浙江工商大学 · 视觉传达设计",
+            "body": "GPA 3.63，专业排名 3/26；两年获得校奖学金，累计 6 次获奖，包括 1 项国家级银奖与 5 项省级金银奖；曾任青年志愿者协会副部长。"
+          }
+        ]
+      }
+    ],
+    "source": "public/resume.pdf",
+    "phone": "15906537011",
+    "email": "haoshengzeng@163.com",
+    "contactItems": [
+      {
+        "label": "电话",
+        "value": "15906537011",
+        "href": "tel:15906537011"
+      },
+      {
+        "label": "邮箱",
+        "value": "haoshengzeng@163.com",
+        "href": "mailto:haoshengzeng@163.com"
+      },
+      {
+        "label": "作品集",
+        "value": "作品集 PDF",
+        "href": "/resume.pdf"
+      }
+    ],
+    "links": [
+      {
+        "label": "作品集 PDF",
+        "href": "/resume.pdf"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "baby-first",
+      "title": "宝贝第一品牌全案设计",
+      "category": "品牌设计",
+      "role": "品牌形象提升设计 / 企业画册设计",
+      "year": "",
+      "description": "围绕儿童安全座椅品牌形象提升，建立 VI Basic System、Application System、产品海报与宣传手册，突出安全座椅高标准的产品质量和舒适使用环境。",
+      "workImages": [
+        "/work/page-03.jpg",
+        "/work/page-04.jpg",
+        "/work/page-05.jpg",
+        "/work/page-06.jpg",
+        "/work/page-07.jpg"
+      ]
+    },
+    {
+      "id": "fenglin-haoli",
+      "title": "枫林好礼地区公用品牌设计",
+      "category": "品牌设计",
+      "role": "农产品公用品牌 / 包装设计",
+      "year": "",
+      "description": "以永嘉楠溪江山水和民俗文化为线索，完成品牌主视觉、沙岗粉干包装、礼盒包装、特殊包装与纪念版《楠音醉》瓶型设计。",
+      "workImages": [
+        "/work/page-08.jpg",
+        "/work/page-09.jpg",
+        "/work/page-10.jpg",
+        "/work/page-11.jpg",
+        "/work/page-12.jpg",
+        "/work/page-13.jpg",
+        "/work/page-14.jpg",
+        "/work/page-15.jpg",
+        "/work/page-16.jpg",
+        "/work/page-17.jpg",
+        "/work/page-18.jpg"
+      ]
+    },
+    {
+      "id": "asus-store-ux",
+      "title": "华硕电商店铺用户体验设计",
+      "titleLines": [
+        "华硕电商店铺",
+        "用户体验设计"
+      ],
+      "category": "电商设计",
+      "role": "电商体验 / 转化优化",
+      "roleLabel": "Role",
+      "year": "",
+      "description": "面向 618 大促的多品类并发与高峰流量，基于阿里五导家拆分设计方向，通过视觉统一、优惠链路重构、AIGC 素材库和组件复用提升点击率、转化率与客单价。",
+      "overview": "围绕华硕天猫 618 大促页，我负责活动主视觉、电商承接页与爆款模块设计，重点优化强利益点表达、福利链路和多机型统一转化。",
+      "toolsLabel": "Tools",
+      "theme": {
+        "accent": "#c87a68",
+        "accentSoft": "#e8c7bc",
+        "wash": "rgba(255, 247, 242, 0.88)",
+        "blobA": "rgba(223, 157, 136, 0.52)",
+        "blobB": "rgba(236, 201, 190, 0.42)",
+        "blobC": "rgba(181, 214, 214, 0.36)",
+        "blobD": "rgba(246, 229, 214, 0.46)",
+        "blobE": "rgba(203, 219, 205, 0.3)"
+      },
+      "tools": [
+        "Photoshop",
+        "Illustrator",
+        "Figma",
+        "AIGC"
+      ],
+      "images": [
+        {
+          "src": "/work/asus/1.png",
+          "alt": "华硕 618 大促活动首屏设计"
+        },
+        {
+          "src": "/work/asus/2.png",
+          "alt": "华硕 618 福利模块与抽奖区设计"
+        },
+        {
+          "src": "/work/asus/3.png",
+          "alt": "华硕高考奖学金与直播权益区设计"
+        },
+        {
+          "src": "/work/asus/4.png",
+          "alt": "华硕加购抽奖与福利加码区设计"
+        },
+        {
+          "src": "/work/asus/5.png",
+          "alt": "华硕天选 4 AMD 爆款卡片设计"
+        },
+        {
+          "src": "/work/asus/6.png",
+          "alt": "华硕天选 6 Pro 爆款卡片设计"
+        },
+        {
+          "src": "/work/asus/7.png",
+          "alt": "华硕双卡爆款列表展示设计"
+        },
+        {
+          "src": "/work/asus/8.png",
+          "alt": "华硕爆款列表多机型延展设计"
+        },
+        {
+          "src": "/work/asus/9.png",
+          "alt": "华硕白机款爆款卡片设计"
+        }
+      ],
+      "process": [
+        {
+          "caption": "01 / Campaign Entry",
+          "title": "把补贴、领券与 618 情绪集中在第一屏。",
+          "titleLines": [
+            "把补贴、领券",
+            "与 618 情绪",
+            "集中在第一屏。"
+          ],
+          "body": [
+            "首屏先用“国家补贴至高 2000 元”建立强记忆点，再把 Plus 券、领券入口和核心品类利益点压进同一视觉节奏里，让用户在进入页面后的几秒内完成价值判断。",
+            "画面上通过高饱和红橙建立活动气氛，同时保留产品主体和优惠信息的可读层级，避免促销信息堆叠后失去主次。"
+          ],
+          "imageIndexes": [
+            1
+          ],
+          "layout": "single"
+        },
+        {
+          "caption": "02 / Benefit Flow",
+          "title": "把福利区拆成更容易理解和行动的节点。",
+          "titleLines": [
+            "把福利区拆成",
+            "更容易理解",
+            "和行动的节点。"
+          ],
+          "body": [
+            "在福利承接段，我把奖学金、直播权益、入会福利、加购抽奖等内容拆解成更清晰的行动单元，让用户可以快速知道“我能领什么、该点哪里、下一步去哪”。",
+            "信息层级尽量前置到按钮与模块标题上，减少读完整段文案才理解规则的负担，也让高峰流量下的页面更适合快速浏览。"
+          ],
+          "imageIndexes": [
+            2,
+            3
+          ],
+          "layout": "pair"
+        },
+        {
+          "caption": "03 / Bestseller System",
+          "title": "用统一的爆款版式承接不同价位段产品。",
+          "titleLines": [
+            "用统一的爆款版式",
+            "承接不同价位段产品。"
+          ],
+          "body": [
+            "进入爆款清单后，页面切换到更稳定的产品卡片语法：统一的补贴标题、统一的卖点排布、统一的价格和赠品区块，让用户在滚动过程中持续复用同一套阅读逻辑。",
+            "这样既能保留 618 的热闹氛围，也能让具体机型信息被更直接地识别，减少视觉刺激过强带来的选择疲劳。"
+          ],
+          "imageIndexes": [
+            4,
+            5
+          ],
+          "layout": "pair"
+        },
+        {
+          "caption": "04 / Series Extension",
+          "title": "在多机型延展里保持同一套促销语法。",
+          "titleLines": [
+            "在多机型延展里",
+            "保持同一套促销语法。"
+          ],
+          "body": [
+            "后续的双卡与多卡延展继续沿用同一套模块系统，把不同配置、颜色和价格带放进稳定框架中，方便运营快速替换素材，也方便用户横向比较。",
+            "整页最终形成从强利益点吸引、到福利路径承接、再到爆款清单转化的连续节奏，让页面既有大促冲击力，也有足够清晰的购买路径。"
+          ],
+          "imageIndexes": [
+            6,
+            7,
+            8
+          ],
+          "layout": "mosaic"
+        }
+      ],
+      "strategy": {
+        "caption": "05 / Strategy Direction",
+        "title": "基于数据和业务目标，根据阿里五导家拆分设计方向",
+        "titleLines": [
+          "基于数据和业务目标",
+          "拆分设计方向"
+        ],
+        "description": "在完成活动页面视觉与商品模块后，将页面目标回收到增长与转化两个层面：一边承接爆发期流量，一边优化用户从浏览、领券到下单的关键路径。",
+        "pillars": [
+          {
+            "label": "增量创新",
+            "sub": "Pull people",
+            "variant": "left",
+            "items": [
+              "爆发期流量承接",
+              "沉浸式逛店时长",
+              "全品类场景化营销",
+              "节庆氛围可视化"
+            ]
+          },
+          {
+            "label": "设计策略",
+            "sub": "Strategy",
+            "variant": "core",
+            "items": []
+          },
+          {
+            "label": "存量优化",
+            "sub": "Money making",
+            "variant": "right",
+            "items": [
+              "复杂优惠转化率",
+              "全链路决策效率",
+              "品牌矩阵视觉统一",
+              "价格权益感知"
+            ]
+          }
+        ],
+        "goal": "O：优化大促用户体验与转化路径，提升销售爆发力与品牌心智渗透率。",
+        "actionLabel": "设计动作",
+        "metrics": [
+          {
+            "label": "KR1",
+            "text": "核心爆款转化率提升 20%，复杂优惠感知度提升。",
+            "action": "重构价格锚点视觉体系；搭建“优惠瀑布流”模块，降低决策门槛，植入 FOMO 微交互。"
+          },
+          {
+            "label": "KR2",
+            "text": "全品类连带率提升 10%，高客单产品占比增长 8%。",
+            "action": "构建“模块化狂欢皮肤系统”；设计智能推荐组合包，强化高价值权益感知。"
+          },
+          {
+            "label": "KR3",
+            "text": "页面停留时长提升 2%，跳失率降低 5%。",
+            "action": "打造“赛博庙会”式沉浸动线；优化楼层导航与信息架构，落地 AIDA 模型转化漏斗。"
+          }
+        ]
+      },
+      "strategyCases": [
+        {
+          "caption": "06 / KR1 Deep Dive",
+          "title": "KR1：原有布局架构优化降低流量损耗",
+          "titleLines": [
+            "KR1：原有布局架构优化",
+            "降低流量损耗"
+          ],
+          "chartTitle": "核心转化指标 - 领券率（CTR）",
+          "chartBenchmark": "行业标杆均值（5.0%）",
+          "chart": [
+            {
+              "label": "行业标杆均值",
+              "valueLabel": "5.0%",
+              "value": 100
+            },
+            {
+              "label": "主会场平均 CTR",
+              "valueLabel": "3.8%",
+              "value": 76
+            },
+            {
+              "label": "旧版优惠券模块",
+              "valueLabel": "2.3%",
+              "value": 46
+            }
+          ],
+          "insights": [
+            {
+              "label": "信息过载：",
+              "text": "旧版堆砌多种券类型，用户决策成本过高，导致“选择困难”。"
+            },
+            {
+              "label": "感知弱：",
+              "text": "核心利益点被淹没在复杂规则中，首屏吸引力不足。"
+            },
+            {
+              "label": "路径深：",
+              "text": "领券需跳转二级页，流失率在该环节高达 40%。"
+            }
+          ],
+          "problem": {
+            "label": "业务问题",
+            "text": "“优惠券模块”作为核心转化工具，因规则复杂和视觉干扰，导致大量流量在“浏览→领取”环节流失。如何在不增加开发成本的前提下，通过设计手段降低认知门槛并缩短路径？"
+          },
+          "solutionLabel": "设计策略",
+          "solutions": [
+            {
+              "title": "层级重构",
+              "text": "改为“阶梯式”瀑布流设计。利用色彩心理学突出“大额券”，隐藏次要信息。"
+            },
+            {
+              "title": "交互路径缩短",
+              "text": "改为当前页弹窗领券，减少页面跳转；增加“FOMO 倒计时”微动效，利用稀缺感刺激立即下单，形成闭环。"
+            }
+          ]
+        },
+        {
+          "caption": "07 / KR3 Deep Dive",
+          "title": "KR3：流失用户去向竞店分析",
+          "titleLines": [
+            "KR3：流失用户去向",
+            "竞店分析"
+          ],
+          "imageAnalysis": {
+            "items": [
+              {
+                "brand": "惠普",
+                "variant": "hp",
+                "image": "/work/asus/kr3-hp.png",
+                "alt": "惠普 618 竞店页面高清视觉分析素材",
+                "notes": [
+                  "亲和力强，降低决策门槛",
+                  "利益点放在黄金位置，直击痛点",
+                  "二维码 + 热销清单形式，激发从众心理",
+                  "缺乏独特记忆点"
+                ],
+                "callouts": [
+                  {
+                    "text": "亲和力强，降低决策门槛",
+                    "x": 52,
+                    "y": 29
+                  },
+                  {
+                    "text": "利益点放在黄金位置，直击痛点",
+                    "x": 58,
+                    "y": 45
+                  },
+                  {
+                    "text": "二维码 + 热销清单形式，激发从众心理",
+                    "x": 50,
+                    "y": 72
+                  },
+                  {
+                    "text": "缺乏独特记忆点",
+                    "x": 49,
+                    "y": 89
+                  }
+                ]
+              },
+              {
+                "brand": "ROG",
+                "variant": "rog",
+                "image": "/work/asus/kr3-rog.png",
+                "alt": "ROG 618 竞店页面高清视觉分析素材",
+                "notes": [
+                  "强烈品牌识别度",
+                  "角色引导视线流动，形成自然浏览路径",
+                  "大面积黑色块易引发压迫感"
+                ],
+                "callouts": [
+                  {
+                    "text": "强烈品牌识别度",
+                    "x": 80,
+                    "y": 9
+                  },
+                  {
+                    "text": "角色引导视线流动，形成自然浏览路径",
+                    "x": 76,
+                    "y": 55
+                  },
+                  {
+                    "text": "大面积黑色块易引发压迫感",
+                    "x": 82,
+                    "y": 73
+                  }
+                ]
+              }
+            ]
+          },
+          "problem": {
+            "label": "竞店观察",
+            "text": "流失用户更容易被明确补贴感、强品牌记忆点和顺畅浏览路径截住。惠普降低了选择门槛，但记忆符号偏弱；ROG 识别度强，但高压色块会带来浏览负担。"
+          },
+          "solutionLabel": "设计动作",
+          "solutions": [
+            {
+              "title": "利益点前置",
+              "text": "将补贴、券包和下单收益放在首屏黄金区域，让用户先看到确定性回报，再进入商品选择。"
+            },
+            {
+              "title": "记忆点绑定",
+              "text": "把天选姬、产品卖点和主题色绑定为统一视觉符号，形成比单纯促销更强的品牌识别。"
+            },
+            {
+              "title": "降低压迫感",
+              "text": "保留大促情绪，但减少纯黑压迫面积，用浅色呼吸区和模块节奏延长用户停留。"
+            }
+          ]
+        },
+        {
+          "caption": "08 / Main KV Optimization",
+          "title": "主KV强化利益点感知与转化效率",
+          "titleLines": [
+            "主KV强化利益点感知",
+            "与转化效率"
+          ],
+          "kvFocus": {
+            "image": "/work/asus/1.png",
+            "alt": "华硕 618 主KV利益点与领券动线设计",
+            "left": [
+              {
+                "title": "国补利益点爆炸式引导",
+                "text": [
+                  "首屏就主推“国补至高省2000”，提前建立价格优势认知。",
+                  "“叠加行业&Plus券”用蓝色条带，暗示还能再省，制造优惠预期。"
+                ]
+              },
+              {
+                "title": "关键入口强化引导",
+                "text": [
+                  "在首页首屏提供 10 个明确品类入口，用户无需搜索或滚动，即可直达目标领域。",
+                  "通过预设分类，把“探索型购物”转化为“目的型购物”，极大缩短决策时间。"
+                ]
+              }
+            ],
+            "right": [
+              {
+                "title": "动线优化与存量激活",
+                "text": [
+                  "标语“先领券后购物”，建立行为认知；根据 F 型阅读习惯设计领券按钮。"
+                ]
+              }
+            ],
+            "metric": {
+              "label": "领券点击率",
+              "value": "+134%",
+              "detail": "(2.3% → 5.4%)"
+            }
+          }
+        },
+        {
+          "caption": "09 / Decision Loop",
+          "title": "通过强钩子加速决策闭环",
+          "titleLines": [
+            "通过强钩子加速",
+            "决策闭环"
+          ],
+          "kvFocus": {
+            "image": "/work/asus/2.png",
+            "alt": "华硕 618 预约直播返现与福利加码模块设计",
+            "left": [
+              {
+                "title": "视觉统一造成强烈召唤",
+                "text": [
+                  "缩短路径，用“预约 / 直播 / 返现”制造紧迫感，推动快速下单。"
+                ]
+              }
+            ],
+            "right": [
+              {
+                "title": "转化收尾和用户留存",
+                "text": [
+                  "在大促流量高峰后期，用户对价格敏感度下降，但对额外惊喜和专属权益仍高度敏感。",
+                  "通过该模块可实现从“一次性购买”到“持续互动 + 长期价值”的用户生命周期管理。"
+                ]
+              }
+            ],
+            "metric": {
+              "label": "加购率达",
+              "value": "12.5%"
+            }
+          }
+        },
+        {
+          "caption": "10 / Shelf Engine",
+          "title": "从“货架陈列”到“决策引擎”",
+          "titleLines": [
+            "从“货架陈列”到",
+            "“决策引擎”"
+          ],
+          "shelfEngine": {
+            "images": [
+              {
+                "src": "/work/asus/decision-shelf-laptop.png",
+                "alt": "华硕天选游戏本二级页承接设计",
+                "label": "天选游戏本二级页"
+              },
+              {
+                "src": "/work/asus/decision-shelf-host.png",
+                "alt": "华硕主机二级页承接设计",
+                "label": "主机二级页"
+              },
+              {
+                "src": "/work/asus/decision-shelf-accessory.png",
+                "alt": "华硕外设二级页承接设计",
+                "label": "外设二级页"
+              }
+            ],
+            "notes": [
+              {
+                "title": "利益显性化",
+                "text": [
+                  "复杂的多重优惠逻辑，转化为直观的到手价与省了多少钱。",
+                  "摒弃冗长的价格表，使用户快速锁定目标产品，有效承接首页泛流量。"
+                ]
+              }
+            ],
+            "metric": {
+              "label": "跳失率降低",
+              "value": "12.5%"
+            }
+          }
+        },
+        {
+          "caption": "11 / Hero SKU",
+          "title": "爆款主图：制造视觉紧迫感与超值感",
+          "titleLines": [
+            "爆款主图：制造视觉紧迫感",
+            "与超值感"
+          ],
+          "posterAnalysis": {
+            "subtitle": "核心目标：在 3 秒内抓住用户注意力，传递“限时 + 限价 + 限量”三重刺激，驱动点击与下单。",
+            "image": "/work/asus/tuf4-7735h-rtx4060.png",
+            "alt": "华硕天选 4 爆款主图设计",
+            "left": [
+              "直接亮出最低门槛价，消除比价犹豫。",
+              "消除价格顾虑，降低决策风险。",
+              "拆解优惠来源，增强可信度与稀缺性。"
+            ],
+            "right": [
+              "锁定核心消费群体，提供身份认同。",
+              "制造倒计时焦虑，触发 FOMO。",
+              "将抽象权益转化为实物图，提升感知价值。",
+              "解决物流痛点，提升信任感。",
+              "用具体数字强化“占便宜”心理，比打折更有冲击力。"
+            ],
+            "tags": [
+              "价格锚定",
+              "时间压迫",
+              "人群精准打击"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fangyuan-parking",
+      "title": "方圆 toC 移动端车位平台用户体验设计",
+      "category": "交互设计",
+      "role": "移动端 UX / HMI 适配",
+      "year": "",
+      "description": "围绕城市停车资源错配与驾驶体验割裂问题，重构寻位、导航、交付的交互架构，并延伸至 HMI 车机端，降低认知负荷并提升闲置车位预约转化。",
+      "workImages": [
+        "/work/page-34.jpg",
+        "/work/page-35.jpg",
+        "/work/page-36.jpg",
+        "/work/page-37.jpg",
+        "/work/page-38.jpg",
+        "/work/page-39.jpg",
+        "/work/page-40.jpg",
+        "/work/page-41.jpg",
+        "/work/page-42.jpg",
+        "/work/page-43.jpg",
+        "/work/page-44.jpg",
+        "/work/page-45.jpg",
+        "/work/page-46.jpg"
+      ]
+    },
+    {
+      "id": "zhengxi-luyuan",
+      "title": "正溪鹭缘海报设计",
+      "category": "其他设计",
+      "role": "节气海报 / 定制酒设计",
+      "year": "",
+      "description": "以节气、节庆与热点为驱动，构建私域视觉营销矩阵，通过全年主题海报投放和定制酒瓶贴设计推动销售增量。",
+      "workImages": [
+        "/work/page-48.jpg",
+        "/work/page-49.jpg",
+        "/work/page-50.jpg"
+      ]
+    },
+    {
+      "id": "shanhaijing-aigc",
+      "title": "山海经 AIGC 信息可视化设计",
+      "category": "其他设计",
+      "role": "AIGC / 信息可视化",
+      "year": "",
+      "description": "以 AIGC 赋能信息表达，将传统文化意象转译为可视化内容，用更具叙事感的视觉语言组织信息与品牌价值。",
+      "workImages": [
+        "/work/page-51.jpg",
+        "/work/page-52.jpg"
+      ]
+    }
+  ]
+}

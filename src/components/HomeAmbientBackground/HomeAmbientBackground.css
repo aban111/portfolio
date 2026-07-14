@@ -1,0 +1,129 @@
+.home-ambient-background {
+  --ambient-pointer-x: 50%;
+  --ambient-pointer-y: 42%;
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  contain: strict;
+}
+
+.home-ambient-background::before,
+.home-ambient-background::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.home-ambient-background::before {
+  background:
+    radial-gradient(
+      circle 360px at var(--ambient-pointer-x) var(--ambient-pointer-y),
+      rgba(255, 255, 255, 0.48) 0%,
+      rgba(255, 247, 242, 0.16) 42%,
+      transparent 76%
+    );
+  opacity: 0;
+  transition: opacity 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-ambient-background::after {
+  background-image:
+    linear-gradient(rgba(92, 58, 48, 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(92, 58, 48, 0.027) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(
+    circle 260px at var(--ambient-pointer-x) var(--ambient-pointer-y),
+    rgba(0, 0, 0, 0.68),
+    transparent 78%
+  );
+  opacity: 0;
+  transition: opacity 420ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-ambient-background.is-pointer-active::before {
+  opacity: 0.76;
+}
+
+.home-ambient-background.is-pointer-active::after {
+  opacity: 0.72;
+}
+
+.home-ambient-background__blob {
+  --ambient-shift-x: 0px;
+  --ambient-shift-y: 0px;
+  position: absolute;
+  display: block;
+  border-radius: 48% 52% 58% 42% / 54% 45% 55% 46%;
+  filter: blur(82px);
+  transform: translate3d(var(--ambient-shift-x), var(--ambient-shift-y), 0);
+  will-change: transform;
+}
+
+.home-ambient-background__blob--coral {
+  top: -12%;
+  left: -6%;
+  width: min(48rem, 48vw);
+  height: min(36rem, 38vw);
+  background: rgba(220, 157, 137, 0.25);
+  opacity: 0.78;
+}
+
+.home-ambient-background__blob--sage {
+  top: 5%;
+  right: -9%;
+  width: min(43rem, 44vw);
+  height: min(34rem, 36vw);
+  background: rgba(183, 207, 202, 0.22);
+  opacity: 0.74;
+}
+
+.home-ambient-background__blob--peach {
+  bottom: -16%;
+  left: 22%;
+  width: min(45rem, 46vw);
+  height: min(31rem, 34vw);
+  background: rgba(239, 196, 180, 0.23);
+  opacity: 0.72;
+}
+
+.home-ambient-background__blob--mist {
+  right: 13%;
+  bottom: -18%;
+  width: min(35rem, 36vw);
+  height: min(28rem, 30vw);
+  background: rgba(217, 224, 212, 0.2);
+  opacity: 0.68;
+}
+
+@media (max-width: 780px) {
+  .home-ambient-background__blob {
+    filter: blur(64px);
+  }
+
+  .home-ambient-background__blob--coral,
+  .home-ambient-background__blob--sage {
+    width: 25rem;
+    height: 20rem;
+  }
+
+  .home-ambient-background__blob--peach,
+  .home-ambient-background__blob--mist {
+    width: 22rem;
+    height: 18rem;
+  }
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .home-ambient-background::before,
+  .home-ambient-background::after {
+    display: none;
+  }
+
+  .home-ambient-background__blob {
+    transform: none !important;
+    will-change: auto;
+  }
+}

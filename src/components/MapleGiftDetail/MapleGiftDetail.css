@@ -1,0 +1,936 @@
+.maple-detail {
+  --maple-paper: #f7f1e8;
+  --maple-paper-deep: #eee3d2;
+  --maple-ink: #231b17;
+  --maple-muted: #70655d;
+  --maple-orange: #df590e;
+  --maple-orange-soft: #f0caa6;
+  --maple-brass: #9f7637;
+  --maple-line: rgba(62, 44, 31, 0.18);
+  --maple-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --story-blob-a: rgba(222, 142, 101, 0.28);
+  --story-blob-b: rgba(241, 204, 181, 0.34);
+  --story-blob-c: rgba(197, 216, 209, 0.25);
+  --story-blob-d: rgba(245, 222, 196, 0.32);
+  --story-blob-e: rgba(218, 226, 211, 0.22);
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  overflow: visible;
+  padding: 6px clamp(86px, 6vw, 118px) clamp(104px, 12vw, 176px) 0;
+  color: var(--maple-ink);
+}
+
+.maple-detail::before {
+  content: none;
+}
+
+.maple-detail::after {
+  content: none;
+}
+
+.maple-story-atmosphere {
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(255, 249, 245, 0.98) 0%, rgba(255, 247, 241, 0.96) 28%, rgba(255, 252, 249, 0.98) 66%, #fffdfb 100%);
+}
+
+.maple-story-atmosphere .story-glow {
+  opacity: 0.78;
+}
+
+.maple-detail a:focus-visible,
+.maple-detail button:focus-visible {
+  outline-color: var(--maple-orange);
+}
+
+.maple-back-link {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin: 2px 0 clamp(30px, 4vw, 48px);
+  color: var(--maple-muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transition: color 220ms ease, transform 260ms var(--maple-ease);
+}
+
+.maple-back-link span {
+  color: var(--maple-orange);
+  font-size: 17px;
+  line-height: 1;
+  transition: transform 260ms var(--maple-ease);
+}
+
+.maple-back-link:hover {
+  color: var(--maple-ink);
+  transform: translateX(-3px);
+}
+
+.maple-back-link:hover span {
+  transform: translateX(-3px);
+}
+
+.maple-line-sidebar-shell {
+  position: fixed;
+  z-index: 18;
+  top: 50%;
+  right: 0;
+  width: 168px;
+  padding: 20px 0 20px 16px;
+  transform: translateY(-50%);
+  animation: mapleSidebarEnter 560ms var(--maple-ease) both;
+}
+
+.maple-line-sidebar .line-sidebar__button {
+  font-weight: 720;
+}
+
+.maple-nav-anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+}
+
+#fenglin-overview,
+#fenglin-positioning,
+#fenglin-language,
+#fenglin-products,
+#fenglin-construction,
+#fenglin-outcome {
+  scroll-margin-top: clamp(82px, 10vh, 124px);
+}
+
+.maple-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(38px, 5vw, 82px);
+  align-items: center;
+  min-height: min(680px, calc(100dvh - 148px));
+}
+
+.maple-hero-copy {
+  position: relative;
+  z-index: 1;
+  max-width: 540px;
+  padding: clamp(26px, 3vw, 44px) 0;
+}
+
+.maple-section-eyebrow {
+  margin: 0 0 20px;
+  color: var(--maple-brass);
+  font-size: 11px;
+  font-weight: 760;
+  letter-spacing: 0.14em;
+  line-height: 1.45;
+}
+
+.maple-hero h1,
+.maple-section h2 {
+  margin: 0;
+  color: var(--maple-ink);
+  font-weight: 760;
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.maple-hero h1 span,
+.maple-hero h1 em {
+  display: block;
+}
+
+.maple-hero h1 span {
+  color: var(--maple-orange);
+  font-size: clamp(58px, 6.4vw, 104px);
+  font-style: normal;
+}
+
+.maple-hero h1 em {
+  margin-top: 15px;
+  font-size: clamp(27px, 3.35vw, 56px);
+  font-style: normal;
+}
+
+.maple-hero-lead {
+  max-width: 500px;
+  margin: clamp(28px, 3vw, 42px) 0 0;
+  color: var(--maple-muted);
+  font-size: clamp(16px, 1.45vw, 19px);
+  letter-spacing: 0.01em;
+  line-height: 1.9;
+}
+
+.maple-hero-meta {
+  display: grid;
+  gap: 16px;
+  margin: clamp(32px, 3vw, 44px) 0 0;
+  border-top: 1px solid var(--maple-line);
+  padding-top: 20px;
+}
+
+.maple-hero-meta div {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 14px;
+}
+
+.maple-hero-meta dt,
+.maple-hero-meta dd {
+  margin: 0;
+}
+
+.maple-hero-meta dt {
+  color: var(--maple-brass);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+}
+
+.maple-hero-meta dd {
+  color: var(--maple-ink);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.maple-hero-visual {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.maple-hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 24px 64px rgba(65, 38, 23, 0.12);
+}
+
+.maple-hero-visual figcaption {
+  margin-top: 12px;
+  color: var(--maple-muted);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.maple-river {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  border: 1px solid rgba(223, 89, 14, 0.38);
+  border-left: 0;
+  border-radius: 0 999px 999px 0;
+  pointer-events: none;
+}
+
+.maple-river--hero {
+  display: none;
+}
+
+.maple-section {
+  position: relative;
+  z-index: 1;
+  margin-top: clamp(116px, 15vw, 224px);
+  border-top: 1px solid var(--maple-line);
+  padding-top: clamp(44px, 5.4vw, 82px);
+}
+
+.maple-section h2 {
+  font-size: clamp(34px, 4.5vw, 74px);
+}
+
+.maple-section h2 + p {
+  margin: 25px 0 0;
+  color: var(--maple-muted);
+  font-size: clamp(16px, 1.45vw, 19px);
+  line-height: 1.9;
+}
+
+.maple-context {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.58fr) minmax(0, 1.42fr);
+  column-gap: clamp(44px, 6vw, 96px);
+  row-gap: clamp(24px, 3vw, 42px);
+  align-items: start;
+}
+
+.maple-section-heading {
+  grid-row: 1 / span 2;
+  max-width: 430px;
+}
+
+.maple-context-details {
+  grid-column: 2;
+  padding-top: 0;
+}
+
+.maple-context-details ol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(22px, 2.4vw, 38px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.maple-context-details li {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 14px;
+  border-top: 1px solid var(--maple-line);
+  padding: 18px 0;
+}
+
+.maple-context-details li:last-child {
+  border-bottom: 0;
+}
+
+.maple-context-details li > span {
+  color: var(--maple-orange);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.maple-context-details h3,
+.maple-context-details p {
+  margin: 0;
+}
+
+.maple-context-details h3 {
+  color: var(--maple-ink);
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.maple-context-details p {
+  margin-top: 7px;
+  color: var(--maple-muted);
+  font-size: 14px;
+  line-height: 1.72;
+}
+
+.maple-journey {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  color: var(--maple-brass);
+  font-size: 12px;
+  font-weight: 730;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.maple-journey i {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: var(--maple-brass);
+}
+
+.maple-journey i::after {
+  position: absolute;
+  top: -3px;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid var(--maple-brass);
+  border-right: 1px solid var(--maple-brass);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.maple-context-art {
+  grid-column: 2;
+  min-width: 0;
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 0;
+  border-radius: 14px;
+  background: transparent;
+}
+
+.maple-context-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.maple-language-header {
+  max-width: 770px;
+}
+
+.maple-language-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(245px, 0.58fr);
+  gap: clamp(24px, 4vw, 72px);
+  align-items: center;
+  margin-top: clamp(40px, 5vw, 74px);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+}
+
+.maple-language-stage > img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: contain;
+  border-radius: 14px;
+  mix-blend-mode: multiply;
+}
+
+.maple-language-ribbon {
+  display: none;
+}
+
+.maple-language-ribbon--one {
+  top: -18%;
+  right: 14%;
+  width: 48%;
+  height: 72%;
+  transform: rotate(-12deg);
+}
+
+.maple-language-ribbon--two {
+  bottom: -26%;
+  left: 9%;
+  width: 44%;
+  height: 62%;
+  transform: rotate(22deg);
+}
+
+.maple-language-principles {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: clamp(22px, 2.4vw, 34px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.maple-language-principles li {
+  position: relative;
+  border: 0;
+  padding: 0 0 0 20px;
+}
+
+.maple-language-principles li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 9px;
+  height: 1px;
+  background: var(--maple-orange);
+  content: "";
+}
+
+.maple-language-principles strong,
+.maple-language-principles span {
+  display: block;
+}
+
+.maple-language-principles strong {
+  color: var(--maple-orange);
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.maple-language-principles span {
+  margin-top: 6px;
+  color: var(--maple-muted);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.maple-products {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1.45fr);
+  gap: clamp(38px, 6vw, 96px);
+  align-items: start;
+}
+
+.maple-products-heading {
+  max-width: 380px;
+}
+
+.maple-products-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: clamp(14px, 1.7vw, 24px);
+}
+
+.maple-product {
+  position: relative;
+  align-self: start;
+  min-width: 0;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  transition: transform 420ms var(--maple-ease);
+}
+
+.maple-product--powder {
+  grid-column: span 7;
+}
+
+.maple-product--wine {
+  grid-column: span 5;
+}
+
+.maple-product--rack {
+  grid-column: 3 / span 8;
+  margin-top: clamp(12px, 2vw, 28px);
+}
+
+.maple-product img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.08;
+  object-fit: cover;
+  border-radius: 14px;
+  background: rgba(239, 226, 206, 0.72);
+  box-shadow: 0 14px 42px rgba(65, 38, 23, 0.07);
+  transition: transform 640ms var(--maple-ease), filter 260ms ease;
+}
+
+.maple-product--wine img,
+.maple-product--rack img {
+  aspect-ratio: 1.55;
+}
+
+.maple-product figcaption {
+  display: grid;
+  gap: 6px;
+  padding: 14px 2px 0;
+  background: transparent;
+}
+
+.maple-product figcaption span {
+  color: var(--maple-ink);
+  font-size: 16px;
+  font-weight: 760;
+  letter-spacing: -0.02em;
+}
+
+.maple-product figcaption small {
+  color: var(--maple-muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.maple-product:hover {
+  transform: translateY(-3px);
+}
+
+.maple-product:hover img {
+  transform: scale(1.018);
+}
+
+.maple-product:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.maple-construction-header {
+  max-width: 780px;
+}
+
+.maple-construction-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: clamp(16px, 2vw, 28px);
+  margin-top: clamp(40px, 5vw, 72px);
+}
+
+.maple-construction-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+
+.maple-construction-card--dieline {
+  grid-column: span 7;
+}
+
+.maple-construction-card--bottle {
+  grid-column: span 5;
+}
+
+.maple-construction-card--sketch {
+  grid-column: 2 / span 10;
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  align-items: end;
+  margin-top: clamp(8px, 1.2vw, 16px);
+}
+
+.maple-construction-card > img {
+  display: block;
+  width: 100%;
+  height: clamp(260px, 33vw, 520px);
+  object-fit: contain;
+  border-radius: 14px;
+  background: rgba(243, 235, 223, 0.68);
+  box-shadow: 0 14px 42px rgba(65, 38, 23, 0.055);
+}
+
+.maple-construction-card--sketch > img {
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
+}
+
+.maple-construction-card--sketch .maple-sketch-secondary {
+  align-self: center;
+  max-width: 82%;
+  margin-inline: auto;
+}
+
+.maple-construction-card figcaption {
+  position: relative;
+  display: grid;
+  gap: 7px;
+  border-top: 0;
+  padding: 15px 2px 0;
+}
+
+.maple-construction-card--sketch figcaption {
+  grid-column: 1 / -1;
+}
+
+.maple-construction-card figcaption strong {
+  color: var(--maple-ink);
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.maple-construction-card figcaption span {
+  max-width: 660px;
+  color: var(--maple-muted);
+  font-size: 13px;
+  line-height: 1.68;
+}
+
+.maple-outcome {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.93fr) minmax(360px, 1.07fr);
+  gap: clamp(42px, 7vw, 122px);
+  align-items: center;
+}
+
+.maple-outcome-copy {
+  max-width: 650px;
+}
+
+.maple-outcome-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: clamp(34px, 4vw, 52px) 0 0;
+  border-top: 1px solid var(--maple-line);
+  border-bottom: 1px solid var(--maple-line);
+  padding: 20px 0;
+}
+
+.maple-outcome-metrics div + div {
+  border-left: 1px solid var(--maple-line);
+  padding-left: 15px;
+}
+
+.maple-outcome-metrics dt,
+.maple-outcome-metrics dd {
+  margin: 0;
+}
+
+.maple-outcome-metrics dt {
+  color: var(--maple-orange);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 2.5vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.maple-outcome-metrics dd {
+  margin-top: 10px;
+  color: var(--maple-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.maple-outcome-quote {
+  margin: clamp(26px, 3vw, 40px) 0 0;
+  color: var(--maple-ink);
+  font-size: clamp(17px, 1.45vw, 20px);
+  font-weight: 680;
+  line-height: 1.65;
+}
+
+.maple-outcome-visual {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(62, 44, 31, 0.16);
+  border-radius: 18px;
+  background: #e9ded0;
+  box-shadow: 0 18px 46px rgba(47, 29, 17, 0.1);
+}
+
+.maple-outcome-visual img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.23;
+  object-fit: cover;
+}
+
+@keyframes mapleSidebarEnter {
+  from {
+    opacity: 0;
+    transform: translate(14px, -50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .maple-detail.is-motion-ready [data-maple-reveal] {
+    opacity: 0;
+    transition: opacity 500ms ease, transform 720ms var(--maple-ease);
+  }
+
+  .maple-detail.is-motion-ready [data-maple-reveal][data-maple-reveal-direction="left"] {
+    transform: translate3d(-34px, 0, 0);
+  }
+
+  .maple-detail.is-motion-ready [data-maple-reveal][data-maple-reveal-direction="right"] {
+    transform: translate3d(34px, 0, 0);
+  }
+
+  .maple-detail.is-motion-ready [data-maple-reveal][data-maple-reveal-direction="up"] {
+    transform: translate3d(0, 30px, 0);
+  }
+
+  .maple-detail.is-motion-ready [data-maple-reveal].is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .maple-line-sidebar-shell,
+  .maple-detail *,
+  .maple-detail *::before,
+  .maple-detail *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 1180px) {
+  .maple-detail {
+    padding-right: 0;
+  }
+
+  .maple-line-sidebar-shell {
+    display: none;
+  }
+
+  .maple-context {
+    grid-template-columns: minmax(240px, 0.58fr) minmax(0, 1.42fr);
+  }
+
+  .maple-context-art {
+    grid-column: 2;
+    max-width: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .maple-hero,
+  .maple-outcome {
+    grid-template-columns: 1fr;
+  }
+
+  .maple-hero {
+    min-height: 0;
+  }
+
+  .maple-hero-copy,
+  .maple-outcome-copy {
+    max-width: 720px;
+  }
+
+  .maple-hero-visual {
+    max-width: 860px;
+  }
+
+  .maple-context {
+    grid-template-columns: 1fr;
+  }
+
+  .maple-section-heading,
+  .maple-context-art,
+  .maple-context-details {
+    grid-row: auto;
+    grid-column: 1;
+  }
+
+  .maple-products {
+    grid-template-columns: 1fr;
+  }
+
+  .maple-products-heading {
+    max-width: 670px;
+  }
+
+  .maple-outcome-visual {
+    max-width: 860px;
+  }
+}
+
+@media (max-width: 720px) {
+  .maple-detail {
+    padding-bottom: 92px;
+  }
+
+  .maple-back-link {
+    margin-bottom: 38px;
+  }
+
+  .maple-hero h1 span {
+    font-size: clamp(52px, 15vw, 84px);
+  }
+
+  .maple-hero h1 em {
+    font-size: clamp(27px, 8vw, 42px);
+  }
+
+  .maple-hero-meta div {
+    grid-template-columns: 64px minmax(0, 1fr);
+  }
+
+  .maple-context,
+  .maple-language-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .maple-context-art {
+    grid-column: auto;
+  }
+
+  .maple-context-details ol {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .maple-context-details li:last-child {
+    border-bottom: 1px solid var(--maple-line);
+  }
+
+  .maple-journey {
+    gap: 8px;
+    font-size: 10px;
+  }
+
+  .maple-journey i {
+    width: 20px;
+  }
+
+  .maple-language-principles {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  .maple-language-principles li:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  .maple-products-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .maple-product--powder,
+  .maple-product--wine,
+  .maple-product--rack {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  .maple-product img,
+  .maple-product--wine img,
+  .maple-product--rack img {
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .maple-construction-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .maple-construction-card--dieline,
+  .maple-construction-card--bottle,
+  .maple-construction-card--sketch {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  .maple-construction-card--sketch {
+    grid-template-columns: 1fr;
+  }
+
+  .maple-construction-card--sketch > img {
+    max-height: none;
+  }
+
+  .maple-construction-card--sketch .maple-sketch-secondary {
+    display: none;
+  }
+
+  .maple-outcome-metrics {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .maple-outcome-metrics div + div {
+    border-top: 1px solid var(--maple-line);
+    border-left: 0;
+    padding-top: 15px;
+    padding-left: 0;
+  }
+}
